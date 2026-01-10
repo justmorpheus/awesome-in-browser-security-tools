@@ -1,0 +1,171 @@
+{
+  "tools": [
+    {
+      "name": "SBOM Play",
+      "author": "Cyfinoid",
+      "repo": "https://github.com/cyfinoid/sbomplay",
+      "demo": "https://cyfinoid.github.io/sbomplay/",
+      "description": "A privacy-focused SBOM visualization tool with vulnerability insights, license analysis, and cross-repo visibility.",
+      "keywords": ["SBOM", "vulnerability", "license", "CycloneDX", "SPDX"],
+      "donations": {
+        "github_sponsors": "https://github.com/sponsors/anantshri",
+        "buy_me_a_coffee": "https://buymeacoffee.com/anantshri"
+      },
+      "license": "GPL-3.0",
+      "category": "sbom"
+    },
+    {
+      "name": "AIBOMmaker",
+      "author": "Cyfinoid",
+      "repo": "https://github.com/cyfinoid/aibommaker",
+      "demo": "https://cyfinoid.github.io/aibommaker/",
+      "description": "AI Bill of Materials generator for documenting AI/ML model dependencies and components.",
+      "keywords": ["AIBOM", "AI", "ML", "Bill of Materials"],
+      "donations": {
+        "github_sponsors": "https://github.com/sponsors/anantshri",
+        "buy_me_a_coffee": "https://buymeacoffee.com/anantshri"
+      },
+      "license": "Unlicensed",
+      "category": "sbom"
+    },
+    {
+      "name": "3P-Tracer",
+      "author": "Cyfinoid",
+      "repo": "https://github.com/cyfinoid/3ptracer",
+      "demo": "https://cyfinoid.github.io/3ptracer/",
+      "description": "Comprehensive DNS analysis, certificate transparency discovery, service detection, and security checks — all within your browser.",
+      "keywords": ["DNS", "certificate transparency", "third-party", "service detection"],
+      "donations": {
+        "github_sponsors": "https://github.com/sponsors/anantshri",
+        "buy_me_a_coffee": "https://buymeacoffee.com/anantshri"
+      },
+      "license": "GPL-3.0",
+      "category": "network"
+    },
+    {
+      "name": "Cloud IAM Policy Explorer",
+      "author": "Cyfinoid",
+      "repo": "https://github.com/cyfinoid/cloud-iam-policy-explorer",
+      "demo": "https://cyfinoid.github.io/cloud-iam-policy-explorer/",
+      "description": "IAM policy analysis tool for understanding and auditing cloud access permissions.",
+      "keywords": ["IAM", "AWS", "Azure", "GCP", "policy", "permissions"],
+      "donations": {
+        "github_sponsors": "https://github.com/sponsors/anantshri",
+        "buy_me_a_coffee": "https://buymeacoffee.com/anantshri"
+      },
+      "license": "GPL-3.0",
+      "category": "cloud"
+    },
+    {
+      "name": "GH Navigator",
+      "author": "Cyfinoid",
+      "repo": "https://github.com/cyfinoid/ghnavigator",
+      "demo": "https://cyfinoid.github.io/ghnavigator/",
+      "description": "A client-side repository browser and bulk token analyzer that inspects token validity and scopes to assess the control plane of GitHub environments.",
+      "keywords": ["GitHub", "token", "authentication", "repository", "API"],
+      "donations": {
+        "github_sponsors": "https://github.com/sponsors/anantshri",
+        "buy_me_a_coffee": "https://buymeacoffee.com/anantshri"
+      },
+      "license": "Unlicensed",
+      "category": "auth"
+    },
+    {
+      "name": "ADB Auditor",
+      "author": "thecybersandeep",
+      "repo": "https://github.com/thecybersandeep/adbauditor",
+      "demo": "https://adbauditor.com/",
+      "description": "Browser-based Android security auditing tool.",
+      "keywords": ["Android", "APK", "mobile", "security", "audit"],
+      "donations": null,
+      "license": "CC BY-NC-ND 4.0",
+      "category": "mobile"
+    },
+    {
+      "name": "IPA Auditor",
+      "author": "thecybersandeep",
+      "repo": "https://github.com/thecybersandeep/ipaauditor",
+      "demo": "https://ipaauditor.com/",
+      "description": "Browser-based iOS IPA security analyzer.",
+      "keywords": ["iOS", "IPA", "mobile", "security", "audit"],
+      "donations": null,
+      "license": "CC BY-NC-ND 4.0",
+      "category": "mobile"
+    },
+    {
+      "name": "CyberChef",
+      "author": "GCHQ",
+      "repo": "https://github.com/gchq/CyberChef",
+      "demo": "https://gchq.github.io/CyberChef",
+      "description": "The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis.",
+      "keywords": ["encryption", "encoding", "hashing", "compression", "data-analysis"],
+      "donations": null,
+      "license": "Apache-2.0",
+      "category": "encoding"
+    },
+    {
+      "name": "Security Webtools",
+      "author": "dmtkfs",
+      "repo": "https://github.com/dmtkfs/security-webtools",
+      "demo": "https://dmtkfs.github.io/security-webtools/",
+      "description": "Local-first browser-based security tools for developers and defenders. No backend, no data sent anywhere.",
+      "keywords": ["security", "blue-team", "log-analysis", "threat-simulation", "MITRE ATT&CK"],
+      "donations": null,
+      "license": "Apache-2.0",
+      "category": "multi"
+    },
+    {
+      "name": "Password Security Analyzer",
+      "author": "NaveenJc10",
+      "repo": "https://github.com/NaveenJc10/Password-Security-Analyzer",
+      "demo": "https://naveenjc10.github.io/Password-Security-Analyzer/",
+      "description": "A browser-based tool to analyze password strength, estimate entropy, generate secure passwords, and check breach exposure locally.",
+      "keywords": ["password", "entropy", "security", "breach-check"],
+      "donations": null,
+      "license": "Unlicensed",
+      "category": "password"
+    }
+  ],
+  "categories": {
+    "sbom": {
+      "name": "SBOM & Dependency Analysis",
+      "description": "Software Bill of Materials and dependency management tools",
+      "order": 1
+    },
+    "network": {
+      "name": "DNS & Network Analysis",
+      "description": "Network reconnaissance and DNS analysis tools",
+      "order": 2
+    },
+    "cloud": {
+      "name": "Cloud Security",
+      "description": "Cloud infrastructure and IAM security tools",
+      "order": 3
+    },
+    "auth": {
+      "name": "Authentication & Keys",
+      "description": "Authentication, token, and key management tools",
+      "order": 4
+    },
+    "mobile": {
+      "name": "Mobile Security",
+      "description": "Mobile application security and analysis tools",
+      "order": 5
+    },
+    "encoding": {
+      "name": "Encoding & Cryptography",
+      "description": "Encryption, encoding, hashing, and data transformation tools",
+      "order": 6
+    },
+    "multi": {
+      "name": "Multi-Purpose Security",
+      "description": "Comprehensive security toolkits with multiple capabilities",
+      "order": 7
+    },
+    "password": {
+      "name": "Password Security",
+      "description": "Password analysis, generation, and breach checking tools",
+      "order": 8
+    }
+  }
+}

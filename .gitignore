@@ -1,0 +1,12 @@
+# Local files
+.DS_Store
+
+# Local scripts (not part of the project)
+extra-scripts/
+
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc

@@ -1,0 +1,69 @@
+# Sync tools.json changes to README.md and HTML
+name: Sync Tools Data
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/tools.json'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'data/tools.json'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    name: Validate tools.json
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate tools.json
+        run: python scripts/validate_tools.py
+
+  sync:
+    name: Sync README and HTML
+    needs: validate
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate README.md
+        run: python scripts/generate_readme.py
+
+      - name: Generate tools-data.js
+        run: python scripts/generate_html.py
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git diff --quiet || echo "changes=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md docs/js/tools-data.js
+          git commit -m "chore: sync README and HTML from tools.json [skip ci]"
+          git push
