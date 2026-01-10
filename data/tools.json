@@ -124,6 +124,17 @@
       "donations": null,
       "license": "Unlicensed",
       "category": "password"
+    },
+    {
+      "name": "HIPAA-SRA-Tool",
+      "author": "SaberGuard-LLC",
+      "repo": "https://github.com/SaberGuard-LLC/HIPAA-SRA-Tool",
+      "demo": "https://saberguard-llc.github.io/HIPAA-SRA-Tool/",
+      "description": "A client-side only, no-data-retained HIPAA Security Risk Assessment (SRA) tool. Runs 100% in the browser with no backend, no trackers, no storage. Supports PDF export and JSON import/export.",
+      "keywords": ["HIPAA", "SRA", "compliance", "risk-assessment", "healthcare"],
+      "donations": null,
+      "license": "MIT",
+      "category": "compliance"
     }
   ],
   "categories": {
@@ -166,6 +177,11 @@
       "name": "Password Security",
       "description": "Password analysis, generation, and breach checking tools",
       "order": 8
+    },
+    "compliance": {
+      "name": "Compliance & Risk Assessment",
+      "description": "Security compliance frameworks and risk assessment tools",
+      "order": 9
     }
   }
 }

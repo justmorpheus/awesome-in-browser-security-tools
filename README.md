@@ -28,6 +28,7 @@ Read more: [Making Security Tools Accessible: Why I Chose the Browser](https://b
 - [Encoding & Cryptography](#encoding--cryptography)
 - [Multi-Purpose Security](#multi-purpose-security)
 - [Password Security](#password-security)
+- [Compliance & Risk Assessment](#compliance--risk-assessment)
 - [Contributing](#contributing)
 
 ---
@@ -201,6 +202,23 @@ A browser-based tool to analyze password strength, estimate entropy, generate se
 
 ---
 
+## Compliance & Risk Assessment
+
+### HIPAA-SRA-Tool
+
+A client-side only, no-data-retained HIPAA Security Risk Assessment (SRA) tool. Runs 100% in the browser with no backend, no trackers, no storage. Supports PDF export and JSON import/export.
+
+| Property | Value |
+|----------|-------|
+| **Author** | SaberGuard-LLC |
+| **Demo** | [saberguard-llc.github.io/HIPAA-SRA-Tool/](https://saberguard-llc.github.io/HIPAA-SRA-Tool/) |
+| **Repository** | [github.com/SaberGuard-LLC/HIPAA-SRA-Tool](https://github.com/SaberGuard-LLC/HIPAA-SRA-Tool) |
+| **Keywords** | `HIPAA`, `SRA`, `compliance`, `risk-assessment`, `healthcare` |
+| **License** | ![License](https://badgen.net/github/license/SaberGuard-LLC/HIPAA-SRA-Tool) |
+| **Last Update** | ![Last Commit](https://badgen.net/github/last-commit/SaberGuard-LLC/HIPAA-SRA-Tool) |
+
+---
+
 ## Contributing
 
 Contributions are welcome! To add a new tool:
@@ -223,4 +241,4 @@ To the extent possible under law, the contributors have waived all copyright and
 
 ---
 
-<sub>Last generated: 2026-01-10 15:27 UTC</sub>
+<sub>Last generated: 2026-01-10 17:06 UTC</sub>
