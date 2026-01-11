@@ -623,6 +623,20 @@ footer {
 }
 
 /* Responsive styles */
+
+/* Large tablets and small desktops */
+@media (max-width: 1024px) {
+    .tools-table {
+        font-size: 0.8rem;
+    }
+
+    .tools-table th,
+    .tools-table td {
+        padding: 0.85rem 0.75rem;
+    }
+}
+
+/* Tablets */
 @media (max-width: 768px) {
     header h1 {
         font-size: 1.4rem;
@@ -663,13 +677,20 @@ footer {
         padding: 0.75rem 0.5rem;
     }
 
+    /* Hide license column on tablets to save space */
+    .tools-table th:nth-child(4),
+    .tools-table td:nth-child(4) {
+        display: none;
+    }
+
     .link-btn {
         padding: 0.3rem 0.5rem;
         font-size: 0.65rem;
     }
 }
 
-@media (max-width: 480px) {
+/* Small tablets / large phones - switch to card layout */
+@media (max-width: 640px) {
     .container {
         padding: 0 1rem;
     }
@@ -682,22 +703,38 @@ footer {
         padding: 1.5rem 0;
     }
 
-    /* Stack table on mobile */
+    /* Hide table wrapper border on mobile */
+    .tools-table-wrapper {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        overflow-x: visible;
+    }
+
+    /* Stack table as cards on mobile */
+    .tools-table {
+        display: block;
+    }
+
     .tools-table thead {
         display: none;
+    }
+
+    .tools-table tbody {
+        display: block;
     }
 
     .tools-table tbody tr {
         display: block;
         margin-bottom: 1rem;
+        background: var(--bg-secondary);
         border: 1px solid var(--border-color);
         border-radius: var(--radius-md);
+        box-shadow: var(--shadow-sm);
     }
 
     .tools-table td {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+        display: block;
         padding: 0.75rem 1rem;
         border-bottom: 1px solid var(--border-color);
     }
@@ -706,22 +743,81 @@ footer {
         border-bottom: none;
     }
 
+    /* Show data labels on mobile */
     .tools-table td::before {
         content: attr(data-label);
+        display: block;
         font-weight: 600;
-        font-size: 0.7rem;
+        font-size: 0.65rem;
         text-transform: uppercase;
+        letter-spacing: 0.5px;
         color: var(--text-muted);
-        margin-right: 1rem;
-        flex-shrink: 0;
+        margin-bottom: 0.35rem;
     }
 
-    .tool-name-cell {
-        flex-direction: column;
-        align-items: flex-start;
+    /* Name cell gets special treatment - no label needed, it's the card title */
+    .tools-table td.tool-name-cell::before {
+        display: none;
     }
 
-    .tool-name-cell::before {
-        margin-bottom: 0.25rem;
+    .tool-name {
+        font-size: 1rem;
+    }
+
+    .tool-description {
+        font-size: 0.8rem;
+        margin-top: 0.35rem;
+    }
+
+    /* Show license column again in card layout */
+    .tools-table td:nth-child(4) {
+        display: block;
+    }
+
+    /* Keywords wrap nicely */
+    .keywords {
+        gap: 0.4rem;
+    }
+
+    .keyword-tag {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.6rem;
+    }
+}
+
+/* Small phones */
+@media (max-width: 400px) {
+    .container {
+        padding: 0 0.75rem;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .tagline {
+        font-size: 0.75rem;
+    }
+
+    .tools-table td {
+        padding: 0.6rem 0.85rem;
+    }
+
+    .tool-name {
+        font-size: 0.95rem;
+    }
+
+    .tool-description {
+        font-size: 0.75rem;
+    }
+
+    .filters select {
+        font-size: 0.8rem;
+        padding: 0.6rem 0.75rem;
+    }
+
+    .search-box input {
+        font-size: 0.8rem;
+        padding: 0.6rem 0.75rem;
     }
 }
