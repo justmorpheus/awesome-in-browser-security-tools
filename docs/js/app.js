@@ -303,7 +303,7 @@
                 <td data-label="Name" class="tool-name-cell">
                     <div class="tool-name"><a href="${escapeHtml(tool.repo)}" target="_blank" rel="noopener">${escapeHtml(tool.name)}</a></div>
                     <div class="tool-description">${escapeHtml(tool.description)}</div>
-                    <div class="tool-demo"><a href="${escapeHtml(tool.demo)}" target="_blank" rel="noopener">Live Demo →</a></div>
+                    <div class="tool-demo"><a href="${escapeHtml(tool.demo)}" target="_blank" rel="noopener">Live Demo</a></div>
                 </td>
                 <td data-label="Author">
                     <a href="${authorProfileUrl}" target="_blank" rel="noopener">${escapeHtml(tool.author)}</a>

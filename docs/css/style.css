@@ -243,6 +243,25 @@ main {
     font-weight: 600;
 }
 
+/* Tool name link indicator */
+.tool-name a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.tool-name a::after {
+    content: "↗";
+    font-size: 0.7em;
+    opacity: 0.5;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.tool-name a:hover::after {
+    opacity: 1;
+    transform: translate(1px, -1px);
+}
+
 .tool-description {
     font-size: 0.75rem;
     color: var(--text-muted);
@@ -251,17 +270,42 @@ main {
 }
 
 .tool-demo {
-    margin-top: 0.35rem;
+    margin-top: 0.5rem;
 }
 
 .tool-demo a {
-    font-size: 0.75rem;
-    color: var(--accent-color);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #ffffff !important;
+    background: #0066cc;
+    padding: 0.3rem 0.6rem;
+    border-radius: var(--radius-sm);
     text-decoration: none;
+    transition: background-color 0.15s ease, transform 0.1s ease;
 }
 
 .tool-demo a:hover {
-    text-decoration: underline;
+    background: #0052a3;
+    text-decoration: none;
+    transform: translateY(-1px);
+}
+
+/* Dark mode: use a vibrant green for better visibility and contrast */
+[data-theme="dark"] .tool-demo a {
+    background: #22a559;
+    color: #ffffff;
+}
+
+[data-theme="dark"] .tool-demo a:hover {
+    background: #1a8f4a;
+}
+
+.tool-demo a::before {
+    content: "▶";
+    font-size: 0.6em;
 }
 
 /* Table links */
