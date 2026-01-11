@@ -107,7 +107,7 @@ window.TOOLS_DATA = {
       "author": "thecybersandeep",
       "repo": "https://github.com/thecybersandeep/adbauditor",
       "demo": "https://adbauditor.com/",
-      "description": "Browser-based Android security auditing tool.",
+      "description": "Browser-based Android security auditing tool \u2014 requires device connected via USB with debugging enabled.",
       "keywords": [
         "Android",
         "APK",
@@ -134,6 +134,23 @@ window.TOOLS_DATA = {
       ],
       "donations": null,
       "license": "CC BY-NC-ND 4.0",
+      "category": "mobile"
+    },
+    {
+      "name": "Frida Web",
+      "author": "zahidaz",
+      "repo": "https://github.com/zahidaz/frida_web",
+      "demo": "https://zahidaz.github.io/frida_web/",
+      "description": "Browser-based Frida client for dynamic instrumentation \u2014 requires Frida server with WebSocket endpoint on target device.",
+      "keywords": [
+        "Frida",
+        "dynamic instrumentation",
+        "reverse engineering",
+        "Android",
+        "iOS"
+      ],
+      "donations": null,
+      "license": "MIT",
       "category": "mobile"
     },
     {

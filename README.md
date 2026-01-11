@@ -124,7 +124,7 @@ A client-side repository browser and bulk token analyzer that inspects token val
 
 ### ADB Auditor
 
-Browser-based Android security auditing tool.
+Browser-based Android security auditing tool — requires device connected via USB with debugging enabled.
 
 | Property | Value |
 |----------|-------|
@@ -134,6 +134,20 @@ Browser-based Android security auditing tool.
 | **Keywords** | `Android`, `APK`, `mobile`, `security`, `audit` |
 | **License** | ![License](https://badgen.net/github/license/thecybersandeep/adbauditor) |
 | **Last Update** | ![Last Commit](https://badgen.net/github/last-commit/thecybersandeep/adbauditor) |
+
+---
+### Frida Web
+
+Browser-based Frida client for dynamic instrumentation — requires Frida server with WebSocket endpoint on target device.
+
+| Property | Value |
+|----------|-------|
+| **Author** | zahidaz |
+| **Demo** | [zahidaz.github.io/frida_web/](https://zahidaz.github.io/frida_web/) |
+| **Repository** | [github.com/zahidaz/frida_web](https://github.com/zahidaz/frida_web) |
+| **Keywords** | `Frida`, `dynamic instrumentation`, `reverse engineering`, `Android`, `iOS` |
+| **License** | ![License](https://badgen.net/github/license/zahidaz/frida_web) |
+| **Last Update** | ![Last Commit](https://badgen.net/github/last-commit/zahidaz/frida_web) |
 
 ---
 ### IPA Auditor
@@ -241,4 +255,4 @@ To the extent possible under law, the contributors have waived all copyright and
 
 ---
 
-<sub>Last generated: 2026-01-10 17:07 UTC</sub>
+<sub>Last generated: 2026-01-11 09:24 UTC</sub>
