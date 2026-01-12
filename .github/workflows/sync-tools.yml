@@ -14,29 +14,13 @@ on:
       - 'data/tools.json'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
-  validate:
-    name: Validate tools.json
+  validate-and-sync:
+    name: Validate and Sync
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Validate tools.json
-        run: python scripts/validate_tools.py
-
-  sync:
-    name: Sync README and HTML
-    needs: validate
-    runs-on: ubuntu-latest
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    permissions:
-      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -48,19 +32,26 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Validate tools.json
+        run: python scripts/validate_tools.py
+
+      # Sync steps only run on push to main (not on PRs)
       - name: Generate README.md
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: python scripts/generate_readme.py
 
       - name: Generate tools-data.js
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: python scripts/generate_html.py
 
       - name: Check for changes
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         id: check_changes
         run: |
           git diff --quiet || echo "changes=true" >> $GITHUB_OUTPUT
 
       - name: Commit and push changes
-        if: steps.check_changes.outputs.changes == 'true'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main' && steps.check_changes.outputs.changes == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
