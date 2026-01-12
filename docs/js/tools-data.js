@@ -233,9 +233,9 @@ window.TOOLS_DATA = {
         "pentesting",
         "security"
       ],
+      "donations": null,
       "category": "auth",
-      "license": "Apache-2.0",
-      "donations": null
+      "license": "Apache-2.0"
     }
   ],
   "categories": {
