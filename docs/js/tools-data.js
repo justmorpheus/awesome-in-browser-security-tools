@@ -219,6 +219,23 @@ window.TOOLS_DATA = {
       "donations": null,
       "license": "MIT",
       "category": "compliance"
+    },
+    {
+      "name": "JWT Auditor",
+      "author": "dr34mhacks",
+      "repo": "https://github.com/dr34mhacks/jwtauditor",
+      "demo": "https://jwtauditor.com/",
+      "description": "Advanced JWT security testing platform for analyzing, decoding, and pentesting JWT vulnerabilities entirely in the browser.",
+      "keywords": [
+        "JWT",
+        "token",
+        "authentication",
+        "pentesting",
+        "security"
+      ],
+      "donations": null,
+      "category": "auth",
+      "license": "Apache-2.0"
     }
   ],
   "categories": {

@@ -119,6 +119,20 @@ A client-side repository browser and bulk token analyzer that inspects token val
 | **Sponsor** | [GitHub Sponsors](https://github.com/sponsors/anantshri) · [Buy Me a Coffee](https://buymeacoffee.com/anantshri) |
 
 ---
+### JWT Auditor
+
+Advanced JWT security testing platform for analyzing, decoding, and pentesting JWT vulnerabilities entirely in the browser.
+
+| Property | Value |
+|----------|-------|
+| **Author** | dr34mhacks |
+| **Demo** | [jwtauditor.com/](https://jwtauditor.com/) |
+| **Repository** | [github.com/dr34mhacks/jwtauditor](https://github.com/dr34mhacks/jwtauditor) |
+| **Keywords** | `JWT`, `token`, `authentication`, `pentesting`, `security` |
+| **License** | ![License](https://badgen.net/github/license/dr34mhacks/jwtauditor) |
+| **Last Update** | ![Last Commit](https://badgen.net/github/last-commit/dr34mhacks/jwtauditor) |
+
+---
 
 ## Mobile Security
 
@@ -255,4 +269,4 @@ To the extent possible under law, the contributors have waived all copyright and
 
 ---
 
-<sub>Last generated: 2026-01-11 09:24 UTC</sub>
+<sub>Last generated: 2026-01-12 13:41 UTC</sub>

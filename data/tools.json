@@ -157,6 +157,17 @@
       "donations": "https://github.com/sponsors/peachycloudsecurity",
       "license": "GPL-3.0",
       "category": "iac"
+    },
+    {
+      "name": "JWT Auditor",
+      "author": "dr34mhacks",
+      "repo": "https://github.com/dr34mhacks/jwtauditor",
+      "demo": "https://jwtauditor.com/",
+      "description": "Advanced JWT security testing platform for analyzing, decoding, and pentesting JWT vulnerabilities entirely in the browser.",
+      "keywords": ["JWT", "token", "authentication", "pentesting", "security"],
+      "donations": null,
+      "category": "auth",
+      "license": "Apache-2.0"
     }
   ],
   "categories": {
