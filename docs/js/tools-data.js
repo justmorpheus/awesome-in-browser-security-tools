@@ -221,6 +221,25 @@ window.TOOLS_DATA = {
       "category": "compliance"
     },
     {
+      "name": "IaC Security Scanner",
+      "author": "peachycloudsecurity",
+      "repo": "https://github.com/peachycloudsecurity/iac-security-scanner",
+      "demo": "https://peachycloudsecurity.com/apps/scanner",
+      "description": "Free Browser Based IAC security scanner for Terraform, Kubernetes, Docker, and CloudFormation with PDF reporting. Everything runs in your browser - no data leaves your device.",
+      "keywords": [
+        "IaC",
+        "infrastructure as code",
+        "Terraform",
+        "Kubernetes",
+        "Docker",
+        "CloudFormation",
+        "security scanner"
+      ],
+      "donations": "https://github.com/sponsors/peachycloudsecurity",
+      "license": "GPL-3.0",
+      "category": "iac"
+    },
+    {
       "name": "JWT Auditor",
       "author": "dr34mhacks",
       "repo": "https://github.com/dr34mhacks/jwtauditor",
@@ -283,6 +302,11 @@ window.TOOLS_DATA = {
       "name": "Compliance & Risk Assessment",
       "description": "Security compliance frameworks and risk assessment tools",
       "order": 9
+    },
+    "iac": {
+      "name": "Infrastructure as Code",
+      "description": "Infrastructure as Code security scanners and analysis tools",
+      "order": 10
     }
   }
 };

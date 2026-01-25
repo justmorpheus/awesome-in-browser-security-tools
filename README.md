@@ -29,6 +29,7 @@ Read more: [Making Security Tools Accessible: Why I Chose the Browser](https://b
 - [Multi-Purpose Security](#multi-purpose-security)
 - [Password Security](#password-security)
 - [Compliance & Risk Assessment](#compliance--risk-assessment)
+- [Infrastructure as Code](#infrastructure-as-code)
 - [Contributing](#contributing)
 
 ---
@@ -247,6 +248,24 @@ A client-side only, no-data-retained HIPAA Security Risk Assessment (SRA) tool. 
 
 ---
 
+## Infrastructure as Code
+
+### IaC Security Scanner
+
+Free Browser Based IAC security scanner for Terraform, Kubernetes, Docker, and CloudFormation with PDF reporting. Everything runs in your browser - no data leaves your device.
+
+| Property | Value |
+|----------|-------|
+| **Author** | peachycloudsecurity |
+| **Demo** | [peachycloudsecurity.com/apps/scanner](https://peachycloudsecurity.com/apps/scanner) |
+| **Repository** | [github.com/peachycloudsecurity/iac-security-scanner](https://github.com/peachycloudsecurity/iac-security-scanner) |
+| **Keywords** | `IaC`, `infrastructure as code`, `Terraform`, `Kubernetes`, `Docker`, `CloudFormation`, `security scanner` |
+| **License** | ![License](https://badgen.net/github/license/peachycloudsecurity/iac-security-scanner) |
+| **Last Update** | ![Last Commit](https://badgen.net/github/last-commit/peachycloudsecurity/iac-security-scanner) |
+| **Sponsor** | [Support the author](https://github.com/sponsors/peachycloudsecurity) |
+
+---
+
 ## Contributing
 
 Contributions are welcome! To add a new tool:
@@ -269,4 +288,4 @@ To the extent possible under law, the contributors have waived all copyright and
 
 ---
 
-<sub>Last generated: 2026-01-12 13:41 UTC</sub>
+<sub>Last generated: 2026-01-25 00:38 UTC</sub>
