@@ -247,6 +247,20 @@ A client-side only, no-data-retained HIPAA Security Risk Assessment (SRA) tool. 
 | **Last Update** | ![Last Commit](https://badgen.net/github/last-commit/SaberGuard-LLC/HIPAA-SRA-Tool) |
 
 ---
+### SITF
+
+SDLC Infrastructure Threat Framework for analyzing supply chain attacks with interactive attack flow visualizer and technique library.
+
+| Property | Value |
+|----------|-------|
+| **Author** | Wiz |
+| **Demo** | [wiz-sec-public.github.io/SITF/](https://wiz-sec-public.github.io/SITF/) |
+| **Repository** | [github.com/wiz-sec-public/SITF](https://github.com/wiz-sec-public/SITF) |
+| **Keywords** | `SDLC`, `supply-chain`, `threat-framework`, `CI/CD`, `attack-flow`, `risk-assessment` |
+| **License** | ![License](https://badgen.net/github/license/wiz-sec-public/SITF) |
+| **Last Update** | ![Last Commit](https://badgen.net/github/last-commit/wiz-sec-public/SITF) |
+
+---
 
 ## Infrastructure as Code
 
@@ -288,4 +302,4 @@ To the extent possible under law, the contributors have waived all copyright and
 
 ---
 
-<sub>Last generated: 2026-01-25 00:38 UTC</sub>
+<sub>Last generated: 2026-01-29 15:33 UTC</sub>

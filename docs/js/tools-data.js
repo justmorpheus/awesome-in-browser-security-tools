@@ -255,6 +255,24 @@ window.TOOLS_DATA = {
       "donations": null,
       "category": "auth",
       "license": "Apache-2.0"
+    },
+    {
+      "name": "SITF",
+      "author": "Wiz",
+      "repo": "https://github.com/wiz-sec-public/SITF",
+      "demo": "https://wiz-sec-public.github.io/SITF/",
+      "description": "SDLC Infrastructure Threat Framework for analyzing supply chain attacks with interactive attack flow visualizer and technique library.",
+      "keywords": [
+        "SDLC",
+        "supply-chain",
+        "threat-framework",
+        "CI/CD",
+        "attack-flow",
+        "risk-assessment"
+      ],
+      "donations": null,
+      "category": "compliance",
+      "license": "CC BY-NC-ND 4.0"
     }
   ],
   "categories": {
