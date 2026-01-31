@@ -154,9 +154,26 @@
       "demo": "https://peachycloudsecurity.com/apps/scanner",
       "description": "Free Browser Based IAC security scanner for Terraform, Kubernetes, Docker, and CloudFormation with PDF reporting. Everything runs in your browser - no data leaves your device.",
       "keywords": ["IaC", "infrastructure as code", "Terraform", "Kubernetes", "Docker", "CloudFormation", "security scanner"],
-      "donations": "https://github.com/sponsors/peachycloudsecurity",
+      "donations": {
+        "github_sponsors": "https://github.com/sponsors/peachycloudsecurity",
+        "ko_fi": "https://ko-fi.com/peachycloudsecurity"
+      },
       "license": "GPL-3.0",
       "category": "iac"
+    },
+    {
+      "name": "Exposed Files Scanner",
+      "author": "peachycloudsecurity",
+      "repo": "https://github.com/peachycloudsecurity/exposed-files-scanner",
+      "demo": "https://peachycloudsecurity.com/apps/exposed-files-scanner",
+      "description": "Browser-based security scanner to detect exposed sensitive files on domains and IPs. Scans for Git repositories, .env files, SSH keys, cloud credentials, and API endpoints. Everything runs client-side with complete privacy.",
+      "keywords": ["exposed files", "git exposure", "env files", "security scanner", "information disclosure", "domain scanner", "sensitive data"],
+      "donations": {
+        "github_sponsors": "https://github.com/sponsors/peachycloudsecurity",
+        "ko_fi": "https://ko-fi.com/peachycloudsecurity"
+      },
+      "license": "GPL-3.0",
+      "category": "multi"
     },
     {
       "name": "JWT Auditor",
